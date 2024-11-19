@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Phudu:wght@300..900&display=swap');
+
+:root{
+  --primary-font : "Outfit", sans-serif;
+  --secondary-font : "Phudu", sans-serif;
+  --brand-color : #2c99cd;
+  --brand-color-dark: #262262;
+  --brand-gradient : linear-gradient(45deg, rgba(38,34,98,1) 15%, rgba(23,68,128,1) 50%, rgba(44,153,205,1) 100%);
+  --brand-gradient-inverse : linear-gradient(45deg, rgba(44,153,205,1) 15%, rgba(23,68,128,1) 50%, rgba(38,34,98,1) 100%);
+  --brand-color2 : #39b54a;
+  --brand-color2-dark : #0a6839;
+  --light-grey: #ecefed;
+}
+
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  letter-spacing: .125rem;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: var(--primary-font);
+  /* background-color: var(--light-grey); */
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.radius2{
+  border-radius: 2rem;
+}
+
+.w-90 {
+  width: 90%;
+  margin: auto;
+}
+
+.mtb-p6 {
+  margin: .6rem 0;
+}
+
+.mtb-1 {
+  margin: 1rem 0;
+}
+
+.ml-p6 {
+  margin-left: .6rem;
+}
+
+.col2-sm {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: .6rem;
+}
+
+@media screen and (min-width: 40em) {
+  .col2-sm {
+    grid-template-columns: 1fr 1fr;
+  }
+}

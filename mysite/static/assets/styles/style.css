@@ -1,0 +1,413 @@
+@import url("/assets/styles/components.css");
+@import url("/assets/styles/presets.css");
+
+/* ================ INTERSECTION OBSERVER =================  */
+.section {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.show {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
+}
+
+
+/* ================ HEADER =================  */
+
+header .inner-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: .6rem;
+}
+
+@media screen and (min-width: 40em) {
+  header .inner-header {
+    width: 60%;
+    margin: auto;
+  }
+}
+
+header .inner-header .logo img {
+  width: 8rem;
+  margin: auto;
+}
+
+header .inner-header nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 100vh;
+  background-color: #fff;
+  text-align: center;
+  z-index: 1;
+  transition: all .3s ease-in-out;
+  overflow: hidden;
+  box-shadow: -9px 0px 24px -11px rgb(165, 164, 165);
+}
+
+.show-nav {
+  width: 70% !important;
+  overflow: visible;
+}
+
+@media screen and (min-width: 40em) {
+  header .inner-header nav {
+    position: static;
+    height: auto;
+    width: auto;
+    background-color: transparent;
+    box-shadow: none;
+  }
+}
+
+header .inner-header nav .close-nav {
+  cursor: pointer;
+  float: right;
+  padding: 1rem .6rem 0;
+}
+
+@media screen and (min-width: 40em) {
+  header .inner-header nav .close-nav {
+    display: none;
+  }
+}
+
+header .inner-header .nav-links {
+  margin-top: 4rem;
+  padding-right: .6rem;
+}
+
+@media screen and (min-width: 40em) {
+  header .inner-header .nav-links {
+    margin-top: 0;
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+  }
+}
+
+header .inner-header .nav-link {
+  font-family: var(--secondary-font);
+  font-weight: 400;
+  letter-spacing: .125rem;
+  display: block;
+  margin: 1rem 0;
+  padding: .6rem 0;
+  text-decoration: none;
+  color: var(--brand-color-dark);
+  transition: 0.3s;
+}
+
+header .inner-header .nav-link:hover {
+  font-weight: 500;
+}
+
+@media screen and (min-width: 40em) {
+  header .inner-header .nav-link {
+    margin: 0 .6rem;
+  }
+}
+
+header .inner-header .active-nav-link {
+  font-weight: 500;
+  color: var(--brand-color2-dark);
+}
+
+header .inner-header .contact-links {
+  margin: 20% 0;
+}
+
+@media screen and (min-width: 40em) {
+  header .inner-header .contact-links, .hire-us  {
+    display: none;
+  }  
+}
+
+header .inner-header .contact-links .c-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin: .6rem;
+  padding: .3rem 0;
+  text-decoration: none;
+  color: var(--brand-color2-dark);
+  border: 2px solid var(--brand-color2-dark);
+  border-radius: 2rem;
+}
+
+header .inner-header .contact-links .c-link i {
+  display: block;
+  font-size: 1.5rem;
+}
+
+header .inner-header .contact-links .c-link b {
+  display: block;
+}
+
+header .inner-header .nav-toggler {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 40em) {
+  header .inner-header .nav-toggler {
+    display: none;
+  }  
+}
+
+/* ================ MAIN -> HERO =================  */
+main .hero {
+  text-align: center;
+  height: 80vh;
+}
+
+@media screen and (min-width: 40em) {
+  main .hero {
+    height: 65vh;
+  }
+}
+
+main .hero-content {
+  margin: 40% auto;
+}
+
+@media screen and (min-width: 40em) {
+  main .hero-content {
+    width: 60%;
+    margin: 15% auto 0;
+  }
+}
+
+main .hero-content p {
+  font-size: 2rem;
+  line-height: 30px;
+}
+
+
+@media screen and (min-width: 40em) {
+  main .hero-content p {
+    font-size: 3rem;
+    line-height: 40px;
+  }
+}
+
+main .hero .hero-img {
+  position: absolute;
+  z-index: -1;
+  top: 3rem;
+  left: -5rem;
+  right: 0;
+}
+
+@media screen and (min-width: 40em) {
+  main .hero .hero-img {
+    top: 3rem;
+    left: 0;
+    right: 0;
+  }
+}
+
+main .hero .hero-img img {
+  width: 140%;
+}
+
+@media screen and (min-width: 40em) {
+  main .hero .hero-img img {
+    width: 50%;
+  }
+}
+
+/* ================ MAIN -> SECTIONS =================  */
+main > * + * {
+  margin: 10rem .6rem 0;
+}
+
+main .about {
+  margin: 0 .6rem;
+}
+
+@media screen and (min-width: 40em) {
+  main .about {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (min-width: 40em) {
+  main > * + * {
+    margin: 10rem auto 0;
+    width: 60%;
+  }
+}
+
+main .section .title {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+main .section .title span {
+  color: var(--brand-color2-dark);
+}
+
+main .section .col-content {
+  background-color: var(--brand-color2-dark);
+  border-radius: .6rem;
+  padding: .6rem;
+  color: white;
+  font-weight: 200;
+}
+
+main .section .col-content-bordered {
+  border: 2px solid var(--brand-color2-dark);
+  border-radius: .6rem;
+  padding: .6rem;
+  color: var(--brand-color2-dark);
+}
+
+
+/* ================ MAIN -> ABOUT =================  */
+
+main .about .col2-sm {
+  margin-top: .6rem;
+}
+
+
+/* ================ MAIN -> SERVICES =================  */
+main .services .col2-sm h3 {
+  padding: .3rem 0 0;
+}
+
+main .services .icon img {
+  width: 3rem;
+}
+
+/* ================ MAIN -> PORTFOLIO =================  */
+main .portfolio article > * + * {
+  margin: .6rem 0;
+}
+
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-pagination-bullet-active {
+  background: var(--swiper-pagination-color, green) !important;
+}
+
+/* ================ MAIN -> PORTFOLIO3 =================  */
+main .p3-projects {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: .6rem;
+}
+
+main .p3-projects .img-container {
+  width: 100%;
+  height: 200px;
+  background-color: red;
+  position: relative;
+}
+
+main .p3-projects .img-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+main .p3-projects .img-container .caption {
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  background-color: var(--brand-color2-dark);
+  color: white;
+  font-size: small;
+  padding: .3rem;
+}
+
+main .p3-projects .project1 {
+  grid-column: 1/3;
+  width: 100%;
+}
+
+main .p3-projects .project2 {
+  grid-row: span 2;
+  height: 100%;
+}
+
+main .p3-projects .project5 {
+  grid-column: 1/3;
+  width: 100%;
+}
+
+
+/* ================ MAIN -> CONTACT =================  */
+main .contact .vertical-line {
+  width: 5px;
+  height: 50px;
+  background-color: var(--brand-color2-dark);
+  border-top-right-radius: .6rem;
+  border-bottom-right-radius: .6rem;
+}
+
+main .contact .contact-info .info {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin: .6rem 0;
+  color: var(--brand-color2-dark);
+}
+
+main .contact .contact-info .info i {
+  font-size: 1.25rem;
+}
+
+main .contact .contact-info .info a {
+  color: var(--brand-color2-dark);
+}
+
+main .contact .address {
+  text-align: right;
+  /* margin: auto; */
+}
+
+main .contact .map-frame {
+  border: 2px solid var(--brand-color2-dark);
+  margin: 1rem 0;
+  overflow: hidden;
+  border-radius: .6rem;
+}
+
+@media screen and (min-width: 40em) {
+  main .contact .map-frame {
+    height: 300px;
+  }  
+}
+
+main .contact .map-frame img {
+  width: 100%;
+  object-fit: cover;
+  border-radius: .5rem;
+}
+
+/* ================ FOOTER =================  */
+footer {
+  text-align: center;
+  margin-top: 10rem;
+  color: white;
+  padding: 5rem 0 1rem;
+  background: var(--brand-color-dark)
+}
+
+footer a {
+  color: white;
+  padding: .6rem 1rem;
+}
+
+footer p {
+  padding: .6rem 0 .2rem;
+}
