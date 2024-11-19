@@ -1,4 +1,5 @@
 {% extends 'mysite/base.html' %}
+{% load static %}
 {% block title %} Geo3D Website {% endblock %}
 
 {% block content %}
@@ -12,7 +13,7 @@
     </div>
 
     <article class="hero-img">
-      <img src="assets/images/map-the-globe.png" alt="">
+      <img src="{% static 'assets/images/map-the-globe.png' %}" alt="">
     </article>
   </section>
 
@@ -61,7 +62,7 @@
       <div class="col2-sm">
         <div class="col-content">
           <div class="icon">
-            <img src="assets/icons/colored/sketch.png" alt="">
+            <img src="{% static 'assets/icons/colored/sketch.png' %}" alt="">
             <h3>Planning</h3>
             <p class="mtb-p6">
               Geo3D provides meticulous planning solutions tailored to the needs of
@@ -74,7 +75,7 @@
         
         <div class="col-content-bordered">
           <div class="icon">
-            <img src="assets/icons/colored/mapping.png" alt="">
+            <img src="{% static 'assets/icons/colored/mapping.png' %}" alt="">
             <h3>Land surveying</h3>
             <p class="mtb-p6">
               Utilizing advanced technology and local expertise, Geo3D conducts
@@ -87,7 +88,7 @@
         
         <div class="col-content">
           <div class="icon">
-            <img src="assets/icons/colored/laser-level.png" alt="">
+            <img src="{% static 'assets/icons/colored/laser-level.png' %}" alt="">
             <h3>topographic surveying</h3>
             <p class="mtb-p6">
               Understanding the lay of the land is essential for any project. Our topographic surveying services provide detailed insights into terrain features, elevations, and natural resources, empowering you to make informed decisions with confidence.
@@ -97,7 +98,7 @@
 
         <div class="col-content-bordered">
           <div class="icon">
-            <img src="assets/icons/colored/agreement.png" alt="">
+            <img src="{% static 'assets/icons/colored/agreement.png' %}" alt="">
             <h3>real estate</h3>
             <p class="mtb-p6">
               Geo3D offers strategic insights and analysis to clients in the real estate
@@ -118,27 +119,27 @@
     </div>
     <article class="p3-projects">
       <div class="img-container project1">
-        <img src="assets/images/dan-roizer-ETAKnrWhbCs-unsplash.jpg" alt="some image">
+        <img src="{% static 'assets/images/dan-roizer-ETAKnrWhbCs-unsplash.jpg' %}" alt="some image">
         <div class="caption">This is a project</div>
       </div>
 
       <div class="img-container project2">
-        <img src="assets/images/IMG_2864.JPG" alt="some image">
+        <img src="{% static 'assets/images/IMG_2864.JPG' %}" alt="some image">
         <div class="caption">This is a project</div>
       </div>
 
       <div class="img-container project3">
-        <img src="assets/images/istockphoto-1466616149-612x612.jpg" alt="some image">
+        <img src="{% static 'assets/images/istockphoto-1466616149-612x612.jpg' %}" alt="some image">
         <div class="caption">This is a project</div>
       </div>
 
       <div class="img-container project4">
-        <img src="assets/images/istockphoto-518652586-612x612.jpg" alt="some image">
+        <img src="{% static 'assets/images/istockphoto-518652586-612x612.jpg' %}" alt="some image">
         <div class="caption">This is a project</div>
       </div>
 
       <div class="img-container project5">
-        <img src="assets/images/pexels-david-mcbee-1546168.jpg" alt="some image">
+        <img src="{% static 'assets/images/pexels-david-mcbee-1546168.jpg' %}" alt="some image">
         <div class="caption">This is a project</div>
       </div>
     </article>
@@ -155,7 +156,7 @@
           <div class="swiper-slide">
             <div class="testmonial-card">
               <div class="prof-pic">
-                <img src="assets/images/blank-profile-picture.png" alt="testmonial-image">
+                <img src="{% static 'assets/images/blank-profile-picture.png' %}" alt="testmonial-image">
               </div>
     
               <div class="testmonial mtb-p6">
@@ -182,7 +183,7 @@
           <div class="swiper-slide">
             <div class="testmonial-card">
               <div class="prof-pic">
-                <img src="assets/images/blank-profile-picture.png" alt="testmonial-image">
+                <img src="{% static 'assets/images/blank-profile-picture.png' %}" alt="testmonial-image">
               </div>
     
               <div class="testmonial mtb-p6">
@@ -209,7 +210,7 @@
           <div class="swiper-slide">
             <div class="testmonial-card">
               <div class="prof-pic">
-                <img src="assets/images/blank-profile-picture.png" alt="testmonial-image">
+                <img src="{% static 'assets/images/blank-profile-picture.png' %}" alt="testmonial-image">
               </div>
     
               <div class="testmonial mtb-p6">
