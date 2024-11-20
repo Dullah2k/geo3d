@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-e%0+^7x_ibpj4-(5(6h+t&vg^rp+-7ob)ax__5!=#*ng!ury(+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["geo3d1.onrender.com"]
+ALLOWED_HOSTS = ["geo3d1.onrender.com", "geo3d.co.tz", "www.geo3d.co.tz", "localhost", "127.0.0.1"]
 
 
 # Application definition
