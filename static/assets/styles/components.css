@@ -1,0 +1,72 @@
+.btn {
+  border: none;
+  display: inline-block;
+  text-decoration: none;
+  color: black;
+  background-color: var(--light-grey);
+  padding: .6rem 1rem;
+  font-size: .9rem;
+  border-radius: var(--radius);
+  cursor: pointer;
+  font-family: var(--primary-font);
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.btn-brand {
+  background: var(--brand-gradient);
+  color: white;
+  letter-spacing: .125rem;
+  border: 2px solid var(--brand-color-dark);
+  transition: 0.3s;
+}
+
+.btn-brand:hover{
+  background: var(--brand-gradient-inverse);
+}
+
+.btn-brand-outline {
+  background-color: transparent;
+  color: var(--brand-color-dark);
+  font-weight: bold;
+  border: 2px solid var(--brand-color-dark);
+}
+
+.btn-brand-outline:hover{
+  color: var(--brand-color);
+  border: 2px solid var(--brand-color);
+}
+
+.btn-brand2 {
+  background: var(--brand-color2-dark);
+  color: white;
+  letter-spacing: .125rem;
+  border: 2px solid var(--brand-color2-dark);
+  transition: 0.3s;
+}
+
+.testmonial-card {
+  padding: .6rem;
+  border-radius: .6rem;
+  background-color: var(--brand-color2-dark);
+}
+
+.testmonial-card .prof-pic img {
+  width: 4rem;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.testmonial-card .name-tittle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.testmonial-card .name-tittle i {
+  display: block;
+}
+
+.testmonial-card .name-tittle .name, .tittle {
+  margin-top: .6rem;
+}
